@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Pets - Happy Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Happy Pets</h1>
+        <p>Find a cute and perfect furry friend to adopt!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pets.html" class="active">Available Pets</a>
+        <a href="adoption.html">Adoption Process</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <main>
+        <h2>Pets Available for Adoption</h2>
+        <p class="intro">Meet the lovely pets who are waiting for a caring family.</p>
+
+        <div class="pets">
+            <div class="pet">
+                <img src="images/cat.svg" alt="Fluffy the Cat">
+                <h3>Fluffy (Cat)</h3>
+                <p>Breed: Persian</p>
+                <p>Age: 1 year</p>
+                <button onclick="adoptPet('Fluffy')">Adopt Cat</button>
+            </div>
+            <div class="pet">
+                <img src="images/dog.svg" alt="Max the Dog">
+                <h3>Max (Dog)</h3>
+                <p>Breed: German Shepherd</p>
+                <p>Age: 6 months</p>
+                <button onclick="adoptPet('Max')">Adopt Dog</button>
+            </div>
+            <div class="pet">
+                <img src="images/bird.svg" alt="Pecky the Bird">
+                <h3>Pecky (Bird)</h3>
+                <p>Breed: Dove</p>
+                <p>Age: 4 years</p>
+                <button onclick="adoptPet('Pecky')">Adopt Bird</button>
+            </div>
+        </div>
+
+        <script>
+            function adoptPet(petName) {
+                window.alert("Thank you for your interest in adopting " + petName + "!");
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>Happy Pets | Giving pets a loving home</p>
+    </footer>
+</body>
+</html>
