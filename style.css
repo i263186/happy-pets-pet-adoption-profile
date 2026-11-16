@@ -1,0 +1,52 @@
+/* Name: Leena Khuram | Roll Number: 26i-3186 | Section: D */
+
+body {
+    background-color:#f7f7ef;
+    color: #333333;
+    font-family: Arial;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    background-color: #315b4a;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: #315b4a;
+}
+
+.pets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pet {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.pet img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pet p {
+    font-size: 15px;
+}
+
+button {
+    background-color: #315b4a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

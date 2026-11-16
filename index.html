@@ -1,0 +1,49 @@
+<!-- Name: Leena Khuram | Roll Number: 26i-3186 | Section: D -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Happy Pets</h1>
+    <p>Find a cute and perfect furry friend to adopt!</p>
+
+    <h2>Pets Available for Adoption</h2>
+
+    <div class="pets">
+        <div class="pet">
+            <img src="images/cat.svg" alt="Fluffy the Cat">
+            <h3>Fluffy (Cat)</h3>
+            <p>Breed: Persian</p>
+            <p>Age: 1 year</p>
+            <button onclick="adoptPet('Fluffy')">Adopt Cat</button>
+        </div>
+
+        <div class="pet">
+            <img src="images/dog.svg" alt="Max the Dog">
+            <h3>Max (Dog)</h3>
+            <p>Breed: German Shepherd</p>
+            <p>Age: 6 months</p>
+            <button onclick="adoptPet('Max')">Adopt Dog</button>
+        </div>
+
+        <div class="pet">
+            <img src="images/bird.svg" alt="Pecky the Bird">
+            <h3>Pecky (Bird)</h3>
+            <p>Breed: Dove</p>
+            <p>Age: 4 years</p>
+            <button onclick="adoptPet('Pecky')">Adopt Bird</button>
+        </div>
+    </div>
+
+    <script>
+        function adoptPet(petName) {
+            window.alert("Thank you for your interest in adopting " + petName + "!");
+        }
+    </script>
+
+</body>
+</html>
