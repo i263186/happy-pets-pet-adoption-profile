@@ -1,27 +1,64 @@
 /* Name: Leena Khuram | Roll Number: 26i-3186 | Section: D */
 
 body {
-    background-color:#f7f7ef;
+    background-color: #f7f7ef;
     color: #333333;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
+    margin: 0;
+    line-height: 1.6;
 }
 
-h1 {
+header {
     background-color: #315b4a;
     color: white;
     padding: 20px;
 }
 
-h2 {
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 12px;
+}
+
+nav a {
     color: #315b4a;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 25px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2, h3 {
+    color: #315b4a;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 0 auto 25px;
 }
 
 .pets {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .pet {
@@ -29,24 +66,73 @@ h2 {
     width: 250px;
     padding: 15px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .pet img {
     width: 100%;
     height: 160px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
 }
 
 .pet p {
     font-size: 15px;
+    margin: 6px 0;
 }
 
-button {
+button, .button {
+    display: inline-block;
     background-color: #315b4a;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button:hover, .button:hover {
+    background-color: #244638;
+}
+
+.content-box {
+    background-color: white;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.content-box h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #315b4a;
+    color: white;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .pet {
+        width: 100%;
+        max-width: 300px;
+    }
 }
